@@ -3,6 +3,16 @@
 Changelog
 #########
 
+0.6 (2016-06-07)
+================
+
+* [Feature] Allow specifying the ``Model`` to use when instantiating a
+  ``QuerySetSequence``. This is required for compatibility with some third-party
+  applications that check the ``model`` field for equality, e.g. when using the
+  ``DjangoFilterBackend`` with Django REST Framework. Thanks @CountZachula #6
+* [Feature] Support ``prefetch_related``.
+* [Bugfix] Fixes an issue when using Django Debug Toolbar, #8.
+
 0.5 (2016-02-21)
 ================
 
